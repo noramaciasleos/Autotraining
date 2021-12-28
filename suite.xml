@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My test suite">
+    <listeners>
+        <listener class-name="com.automation.training.MyCoolListener"></listener>
+            </listeners>
+    <parameter name="stringA" value="I love "></parameter>
+    <parameter name="stringB" value="test automation"></parameter>
+    <test name="My first test">
+        <classes>
+            <class name="com.automation.training.AutomationTest"/>
+        </classes>
+        <groups>
+         <run>
+             <exclude name="grupo1"/>
+         </run>
+        </groups>
+    </test>
+</suite>
